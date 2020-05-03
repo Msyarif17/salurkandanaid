@@ -9,25 +9,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/Carousel-Hero.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/dh-card-image-left-dark.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/Features-Boxed.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/Footer-Clean.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/gradient-navbar-1.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/gradient-navbar.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/Highlight-Blue.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/Highlight-Phone.css')}}">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Carousel-Hero.css">
+    <link rel="stylesheet" href="assets/css/dh-card-image-left-dark.css">
+    <link rel="stylesheet" href="assets/css/Features-Boxed.css">
+    <link rel="stylesheet" href="assets/css/Footer-Clean.css">
+    <link rel="stylesheet" href="assets/css/gradient-navbar-1.css">
+    <link rel="stylesheet" href="assets/css/gradient-navbar.css">
+    <link rel="stylesheet" href="assets/css/Highlight-Blue.css">
+    <link rel="stylesheet" href="assets/css/Highlight-Phone.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
-    <link rel="stylesheet" href="{{asset('assets/css/Navbar-Fixed-Side.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/Navigation-with-Search.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/Newsletter-Subscription-Form.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/styles.css')}}">
+    <link rel="stylesheet" href="assets/css/Navbar-Fixed-Side.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Search.css">
+    <link rel="stylesheet" href="assets/css/Newsletter-Subscription-Form.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body style="background-color: rgb(30,106,221);">
     <!-- Start: Navigation with Search -->
     <nav class="navbar navbar-light navbar-expand-md sticky-top navigation-clean-search">
-        <div class="container-fluid"><a class="navbar-brand" href="/" style="background-image: url(&quot;{{asset('assets/img/lo.png')}}&quot;);background-repeat: no-repeat;background-size: cover;width: 150px;height: 20px;"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container-fluid"><a class="navbar-brand" href="/" style="background-image: url(&quot;assets/img/lo.png&quot;);background-repeat: no-repeat;background-size: cover;width: 150px;height: 20px;"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
             class="collapse navbar-collapse" id="navcol-1">
             <ul class="nav navbar-nav mr-auto">
@@ -114,7 +114,7 @@
                     </div>
                 </div>
             </div>
-            
+
 
         </footer>
     </div>
@@ -125,10 +125,10 @@
     <footer></footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-    <script src="{{asset('assets/js/bs-animation.js')}}"></script>
-    <script src="{{asset('assets/js/jquery-3.3.1.min.js')}}"></script>
-    <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
-    <script src="{{asset('https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js')}}"></script>
+    <script src="assets/js/bs-animation.js"></script>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
 </body>
 
 </html>
