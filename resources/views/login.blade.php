@@ -8,25 +8,51 @@
 				<div class=" card1">
 					<div class="pt-lg-5">
 						<div class="card-header text-center bg-transparent border-bottom-0">
-							<h2>Administrator</h2>
+							<{{ __('Login') }}
 						</div>
 						<div class="card-body">
-							<form>
+                            <form method="POST" action="{{route('login')}}">
+                                @csrf
 								<h6>
-									Email
+									{{ __('E-Mail Address') }}
 								</h6>
-								<input type="email" class="form-control border-light mb-2 bg-transparent text-light" name="" placeholder="email">
+                                <input type="email" id="email" name="email" class="form-control @error('email') is-invalid @enderror border-light mb-2 bg-transparent text-light" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                                @error('email')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
 								<h6>
-									Password
+									{{ __('Password') }}
 								</h6>
-								<input type="password" class="form-control border-light mb-3 text-light bg-transparent" name="" placeholder="password">
-								<input type="submit" class="btn btn-outline-light" name="" value="Login">
+                                <input type="password" id="password" name="password" required autocomplete="current-password" class="form-control @error('password') is-invalid @enderror border-light mb-3 text-light bg-transparent"  placeholder="password">
+                                @error('password')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                                <div class="form-group row">
+                                    <div class="col-md-6 offset-md-4">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+
+                                            <label class="form-check-label" for="remember">
+                                                {{ __('Remember Me') }}
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+								<button type="submit" class="btn btn-primary">
+                                    {{ __('Login') }}
+                                </button>
 							</form>
 							<div class="card-footer text-right border-0">
-				
-								<p>
-									lupa password? <a href="/tentang-kami">klik disini</a>
-								</p>
+
+								@if (Route::has('password.request'))
+                                    <a class="btn btn-link" href="{{ route('password.request') }}">
+                                        {{ __('Forgot Your Password?') }}
+                                    </a>
+                                @endif
 
 							</div>
 						</div>

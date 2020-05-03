@@ -16,8 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/','blog@index');
 Route::get('/visi-misi','blog@vismis');
 Route::get('/tentang-kami','blog@tkami');
-Route::get('/login','blog@login');
 Route::get('/penggalangan','blog@penggalangan');
 Route::get('/penggalangan/donasi','blog@alur');
 Route::get('/kalkulator','blog@forbid');
 
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

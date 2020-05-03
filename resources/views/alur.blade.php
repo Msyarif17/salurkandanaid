@@ -1,7 +1,5 @@
 @extends('master')
-@section('judul')
-    
-@endsection
+@section('judul','Bencana Alam')
 @section('konten')
 
 @endsection
